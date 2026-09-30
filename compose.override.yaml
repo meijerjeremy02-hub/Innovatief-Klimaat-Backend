@@ -1,0 +1,10 @@
+
+services:
+###> doctrine/doctrine-bundle ###
+  database:
+    ports:
+      - "127.0.0.1:3306:3306"
+  phpmyadmin:
+    ports:
+      - "127.0.0.1:8086:80"
+###< doctrine/doctrine-bundle ###
