@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adc5a994-e26d-4b8d-9b7e-0fe8c65551cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/reference.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/reference.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    <list default="true" id="adc5a994-e26d-4b8d-9b7e-0fe8c65551cd" name="Changes" comment="backend setup symfony">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +19,9 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_COMMON_BRANCH" value="main" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -33,23 +29,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.152861439290212" />
-      <entry key="MS500" value="2.8578228470782614" />
-      <entry key="S2" value="6.986129761196412" />
-      <entry key="S5" value="10.172713813826945" />
-      <entry key="S10" value="11.844785111276035" />
-      <entry key="S30" value="13.898119650696984" />
-      <entry key="S60" value="22.501279315061854" />
-      <entry key="M2" value="51.112852144892805" />
-      <entry key="M5" value="128.53592062959416" />
-      <entry key="M10" value="215.54226305162902" />
-      <entry key="M15" value="267.4832862547119" />
-      <entry key="M30" value="340.4937575130783" />
-      <entry key="H1" value="390.287847226068" />
-      <entry key="H2" value="489.1962262889972" />
-      <entry key="H4" value="859.2050792449837" />
-      <entry key="D1" value="2325.3332863373835" />
-      <entry key="W1" value="2873.3067940930046" />
+      <entry key="MS100" value="1.0000499208237497" />
+      <entry key="MS500" value="1.1464611499636481" />
+      <entry key="S2" value="1.9984150785132977" />
+      <entry key="S5" value="2.8149376083511393" />
+      <entry key="S10" value="3.305070469650376" />
+      <entry key="S30" value="3.7409370422643073" />
+      <entry key="S60" value="4.095884895155232" />
+      <entry key="M2" value="9.09479873156107" />
+      <entry key="M5" value="55.84608065463777" />
+      <entry key="M10" value="143.30900010673324" />
+      <entry key="M15" value="206.79110209001004" />
+      <entry key="M30" value="307.37644910149953" />
+      <entry key="H1" value="381.1669264429088" />
+      <entry key="H2" value="492.9323345343505" />
+      <entry key="H4" value="865.7926723940905" />
+      <entry key="D1" value="2342.6310270099175" />
+      <entry key="W1" value="2897.7708838632107" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -58,36 +54,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="1.2491162999425472E-201" />
-      <entry key="M2" value="6.04821971612818E-101" />
-      <entry key="M5" value="1.8240483140363624E-40" />
-      <entry key="M10" value="2.9464144101413023E-20" />
-      <entry key="M15" value="1.6704726605054855E-13" />
-      <entry key="M30" value="9.795294129213604E-7" />
-      <entry key="H1" value="0.0024096430295218133" />
-      <entry key="H2" value="0.12005054526498403" />
-      <entry key="H4" value="0.8483640837354297" />
-      <entry key="D1" value="4.330437543221423" />
-      <entry key="W1" value="5.726895920311916" />
+      <entry key="S60" value="5.9322336615016484E-204" />
+      <entry key="M2" value="4.168072324258961E-102" />
+      <entry key="M5" value="6.256902853891057E-41" />
+      <entry key="M10" value="1.725660535338819E-20" />
+      <entry key="M15" value="1.169356849255191E-13" />
+      <entry key="M30" value="8.195422110991176E-7" />
+      <entry key="H1" value="0.0022040915661968715" />
+      <entry key="H2" value="0.11481604909383261" />
+      <entry key="H4" value="0.8296625838457469" />
+      <entry key="D1" value="4.31437924177397" />
+      <entry key="W1" value="5.723857272855325" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.1291358952054185" />
-      <entry key="MS500" value="2.8460460152153138" />
-      <entry key="S2" value="6.97917901071025" />
-      <entry key="S5" value="10.16868975964562" />
-      <entry key="S10" value="11.842442486020085" />
-      <entry key="S30" value="13.897203641797924" />
-      <entry key="S60" value="22.50054198622861" />
-      <entry key="M2" value="51.11199745485535" />
-      <entry key="M5" value="128.53501070541054" />
-      <entry key="M10" value="215.54148136187865" />
-      <entry key="M15" value="267.48263509299665" />
-      <entry key="M30" value="340.4933416512804" />
-      <entry key="H1" value="390.2900122969337" />
-      <entry key="H2" value="489.3160056095067" />
-      <entry key="H4" value="860.0528917958086" />
-      <entry key="D1" value="2329.6633122847097" />
-      <entry key="W1" value="2879.033613138525" />
+      <entry key="MS100" value="0.9659848846610446" />
+      <entry key="MS500" value="1.138743739945458" />
+      <entry key="S2" value="1.9953005728571818" />
+      <entry key="S5" value="2.813238565218643" />
+      <entry key="S10" value="3.3040849434610045" />
+      <entry key="S30" value="3.740564939030596" />
+      <entry key="S60" value="4.095454920229334" />
+      <entry key="M2" value="9.09323880633587" />
+      <entry key="M5" value="55.8432471202554" />
+      <entry key="M10" value="143.30648569978078" />
+      <entry key="M15" value="206.7890313384618" />
+      <entry key="M30" value="307.3751498621171" />
+      <entry key="H1" value="381.1683905076623" />
+      <entry key="H2" value="493.0466222117193" />
+      <entry key="H4" value="866.6216583281418" />
+      <entry key="D1" value="2346.9449729082426" />
+      <entry key="W1" value="2903.4946609674685" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
@@ -223,39 +219,45 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="3K04q5xpMmctMwJwwf2PgzdC7TR" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jeremy/School/Innovatief-Klimaat/Innovatief-Klimaat-Backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Backend-Api-Setup",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/jeremy/School/Innovatief-Klimaat/Innovatief-Klimaat-Backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -272,7 +274,25 @@
       <updated>1790681341352</updated>
       <workItem from="1790681343257" duration="4067000" />
       <workItem from="1790700433154" duration="11313000" />
+      <workItem from="1790749099101" duration="895000" />
     </task>
+    <task id="LOCAL-00001" summary="backend setup symfony">
+      <option name="closed" value="true" />
+      <created>1790749384559</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790749384559</updated>
+    </task>
+    <task id="LOCAL-00002" summary="backend setup symfony">
+      <option name="closed" value="true" />
+      <created>1790749536138</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790749536138</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,5 +308,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="backend setup symfony" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend setup symfony" />
   </component>
 </project>

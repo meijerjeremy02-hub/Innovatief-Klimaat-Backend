@@ -1,99 +1,64 @@
-# Innovatief Klimaat API
+# Innovatief Klimaat
 
-## Run locally
+## Studentgegevens
+- **Studentnaam:** Jeremy Meijer
+- **Studentnummer:** 97124269
 
-Requirements: Podman Compose (or Docker Compose).
+---
 
-Create your ignored local environment file once:
+## Projectgegevens
 
-```sh
-cp .env.local.example .env.local
-```
+### Naam van het project
+**Innovatief Klimaat**
 
-Replace `APP_SECRET`, `ADMIN_PASSWORD_HASH`, and the MySQL passwords with
-private values before starting the stack. Generate a bcrypt hash with:
+### Beschrijving van het project
+Innovatief Klimaat is een interactieve vragenlijst-applicatie gebaseerd op de 10 dimensies van een innovatief klimaat (volgens de theorie van Göran Ekvall), met 5 vragen per dimensie. Docententeams van het Deltion College — elk vallend onder een categorie — kunnen de vragenlijst via een teamcode invullen en krijgen inzicht in hun resultaten per dimensie, vergeleken met het gemiddelde van hun categorie en het totaal van alle teams.
 
-```sh
-php -r 'echo password_hash("choose-a-private-password", PASSWORD_BCRYPT), PHP_EOL;'
-```
+Het project bestaat uit twee onderdelen die in aparte sprints worden ontwikkeld:
+- **Front-end:** een React/TypeScript-applicatie (Vite, Tailwind CSS) waarin gebruikers de vragenlijst invullen en de uitkomsten visueel bekijken.
+- **Back-end:** een REST-API in PHP met het Symfony-framework, gekoppeld aan een MySQL-database. Deze beheert categorieën, teams, dimensies en vragen, slaat antwoorden anoniem op en berekent resultaten per persoon, per categorie en in totaal — steeds gefilterd per dimensie.
 
-```sh
-podman compose --env-file .env.local up -d --build
-podman compose exec app php bin/console doctrine:migrations:migrate --no-interaction
-```
+Omdat het project langer dan één week duurt, beschrijft dit README.md het project als geheel. Per sprint schrijf ik een apart README<num>.md bestand (bijv. README1.md) met de specifieke doelen voor die week.
 
-The API is at `http://localhost:8080/api`; API Platform docs are at
-`http://localhost:8080/api/docs`. The Compose setup serves the API in production
-mode, exposes MySQL only on `127.0.0.1:3306`, and provides local phpMyAdmin at
-`http://localhost:8086`. Log into phpMyAdmin with the `MYSQL_USER` and
-`MYSQL_PASSWORD` values, then select `MYSQL_DATABASE` (defaults: `app` and
-`ChangeMe`). phpMyAdmin is bound to localhost and is not exposed by the
-production Compose file.
+### Reden(en) waarom ik dit project wil maken
+Ik voer dit project uit voor een echte opdrachtgever. Het is voor mij een mooie kans om zowel mijn front-end als back-end vaardigheden te ontwikkelen: ik heb al ervaring opgedaan met React, en wil nu leren hoe je een eigen back-end (Symfony) en database bouwt en deze koppelt aan een bestaande front-end.
 
-Use `Accept: application/json` and `Content-Type: application/json` in frontend
-requests. Local CORS permits `localhost` and `127.0.0.1` on any port.
+### Randvoorwaarden
 
-## Survey flow
+| Onderdeel | Randvoorwaarde / Implementatie |
+| :--- | :--- |
+| **AVG** | Privacy staat voorop. Antwoorden worden volledig anoniem opgeslagen: alleen de teamcode en de gegeven scores worden geregistreerd. Namen, e-mailadressen of IP-adressen van individuele invullers worden nooit opgeslagen. |
+| **Beveiliging** | De back-end gebruikt Doctrine ORM, dat standaard beschermt tegen SQL-injectie via voorbereide statements. Gevoelige instellingen staan in een `.env`-bestand dat niet in de publieke repository komt. |
+| **Copyright** | Alle gebruikte media, stijlen en logo's zijn eigendom van of goedgekeurd door het Deltion College. |
+| **Licenties** | Front-end: React, TypeScript, Vite, Tailwind CSS (MIT-licentie). Back-end: Symfony (PHP) en MySQL/MariaDB, beide open-source. |
+| **Techniek** | Front-end in React/TypeScript; back-end in PHP 8+ met Symfony en een MySQL-database. Communicatie verloopt via JSON over HTTP. |
+| **Wettelijke impact** | Geen directe wettelijke impact. Data wordt uitsluitend intern gebruikt voor analyse. |
+| **Maatschappelijke impact** | Door het innovatieklimaat binnen Deltion inzichtelijk te maken, draagt de tool bij aan een betere leer- en werkomgeving. |
 
-`GET /api/questions` returns dimensions in circle order. Each dimension contains
-five questions, also ordered by question ID.
+### Begin- en einddatum van het project
+- **Begindatum:** 25 augustus 2026
+- **Einddatum:** afhankelijk van het aantal benodigde sprints; wordt na elke sprint met de docent bepaald.
 
-`POST /api/submit` saves one person's answers for one dimension. Send the team
-code, dimension ID, and all five question IDs with integer scores from 1 to 5.
-The response contains a `response_id` for that person's submission for that
-dimension.
+---
 
-Individual answers are available at
-`GET /api/questions/{questionId}/answers`. Result endpoints are:
+## Leerdoelen
+Over het hele project wil ik de volgende doelen behalen:
+- Een front-end applicatie bouwen en beheren met React, TypeScript en Tailwind CSS.
+- Een back-end en database bouwen met Symfony en MySQL, inclusief een datamodel met categorieën, teams, dimensies en vragen.
+- Resultaten kunnen berekenen en filteren op verschillende niveaus (per persoon, per categorie, totaal).
+- Front-end en back-end aan elkaar koppelen via een REST-API met JSON.
+- Veilig en AVG-conform omgaan met gebruikersdata.
 
-- `GET /api/results/team/{teamCode}`
-- `GET /api/results/person/{responseId}`
-- `GET /api/results/category/{categoryId}`
-- `GET /api/results/total`
+> *"The only way to learn a new programming language is by writing programs in it."*
+> — **Dennis Ritchie**
 
-Team, category, and total results group scores by dimension and question. Each
-question includes its average score and response count; each dimension includes
-the average across its answers and the number of participating submissions.
-Category results combine answers from teams assigned to that category.
+---
 
-Creating and deleting categories, teams, dimensions, and questions requires
-HTTP Basic authentication with username `admin`. Submissions and result reads
-are public.
+## Kerntaken / Werkprocessen (Crebo 25998)
+Over het hele project werk ik aan de volgende kwalificatiedossier-werkprocessen:
 
-## Tests
+- **B1-K1-W2 – Maakt een technisch ontwerp voor software:** het ontwerpen van de databasestructuur en de API-opzet voor de back-end.
+- **B1-K1-W3 – Realiseert (onderdelen van) software:** het bouwen van zowel de front-end als de back-end, inclusief de koppeling tussen beide.
+- **B1-K1-W4 – Test software:** het testen van de losse onderdelen (API en front-end) en de complete applicatie.
 
-Run the functional API tests with `php bin/phpunit`. They use an isolated
-in-memory SQLite database and check that category, team, dimension, and
-question creation/deletion works for an administrator and is rejected without
-administrator credentials.
-
-## Deployment
-
-The `Dockerfile` builds the PHP 8.4 + Apache API image and listens on port 8080.
-Deploy it to a Docker-compatible host alongside a MySQL 8.4 database. Configure
-these environment variables on the host (never commit their values):
-
-- `APP_ENV=prod`
-- `APP_DEBUG=0`
-- `APP_SECRET` — a long random secret
-- `DATABASE_URL` — the host's MySQL connection URL with `charset=utf8mb4`
-- `ADMIN_PASSWORD_HASH` — password hash for the `admin` Basic-auth user
-- `CORS_ALLOW_ORIGIN` — regex matching the exact deployed frontend origin, e.g.
-  `^https://my-frontend\.example$`
-- `MYSQL_DATABASE`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_ROOT_PASSWORD` when
-  using the bundled Compose database
-
-Run `php bin/console doctrine:migrations:migrate --no-interaction` as a release
-step after provisioning the database. The migrations create the schema and seed
-the ten dimensions and their 50 questions in circle order.
-
-For a Compose-based server, provide a server-only `.env.local` based on
-`.env.local.example`, set the production frontend origin and strong credentials,
-then run `podman compose up -d --build` and execute the migration command in the
-app container. Pass that file to Compose for variable interpolation:
-`podman compose --env-file .env.local up -d --build`.
-
-Use HTTPS on the public host and replace all local development passwords. Do
-not expose the database port publicly. Hosting request logs may record client
-IP addresses; the application itself does not store respondent IPs or identity
-fields.
+Per sprint werk ik dit verder uit in het bijbehorende README<num>.md bestand.
