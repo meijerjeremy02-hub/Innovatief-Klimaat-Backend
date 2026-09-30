@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adc5a994-e26d-4b8d-9b7e-0fe8c65551cd" name="Changes" comment="backend setup symfony">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +21,12 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="14b7444d-193a-4cc6-960d-bf54fb4b7902" value="" />
+      <entry key="69c15083-d03b-4094-a992-13ebc7864a83" value="" />
+    </colors>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="main" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,23 +38,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000499208237497" />
-      <entry key="MS500" value="1.1464611499636481" />
-      <entry key="S2" value="1.9984150785132977" />
-      <entry key="S5" value="2.8149376083511393" />
-      <entry key="S10" value="3.305070469650376" />
-      <entry key="S30" value="3.7409370422643073" />
-      <entry key="S60" value="4.095884895155232" />
-      <entry key="M2" value="9.09479873156107" />
-      <entry key="M5" value="55.84608065463777" />
-      <entry key="M10" value="143.30900010673324" />
-      <entry key="M15" value="206.79110209001004" />
-      <entry key="M30" value="307.37644910149953" />
-      <entry key="H1" value="381.1669264429088" />
-      <entry key="H2" value="492.9323345343505" />
-      <entry key="H4" value="865.7926723940905" />
-      <entry key="D1" value="2342.6310270099175" />
-      <entry key="W1" value="2897.7708838632107" />
+      <entry key="MS100" value="1.517367881755964" />
+      <entry key="MS500" value="4.105015260779627" />
+      <entry key="S2" value="6.799619478890129" />
+      <entry key="S5" value="9.583403546383103" />
+      <entry key="S10" value="12.806771792599923" />
+      <entry key="S30" value="23.777543492848572" />
+      <entry key="S60" value="33.61374356372345" />
+      <entry key="M2" value="42.72281389865405" />
+      <entry key="M5" value="78.87574159445523" />
+      <entry key="M10" value="162.00631590368693" />
+      <entry key="M15" value="231.4608246841288" />
+      <entry key="M30" value="400.53968302450016" />
+      <entry key="H1" value="665.9346259790606" />
+      <entry key="H2" value="995.7817150708818" />
+      <entry key="H4" value="1486.8421012805345" />
+      <entry key="D1" value="3227.111229955456" />
+      <entry key="W1" value="3924.558608833246" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -54,36 +63,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="5.9322336615016484E-204" />
-      <entry key="M2" value="4.168072324258961E-102" />
-      <entry key="M5" value="6.256902853891057E-41" />
-      <entry key="M10" value="1.725660535338819E-20" />
-      <entry key="M15" value="1.169356849255191E-13" />
-      <entry key="M30" value="8.195422110991176E-7" />
-      <entry key="H1" value="0.0022040915661968715" />
-      <entry key="H2" value="0.11481604909383261" />
-      <entry key="H4" value="0.8296625838457469" />
-      <entry key="D1" value="4.31437924177397" />
-      <entry key="W1" value="5.723857272855325" />
+      <entry key="S60" value="4.4502029310133546E-243" />
+      <entry key="M2" value="1.1416054396767958E-121" />
+      <entry key="M5" value="9.362497729451813E-49" />
+      <entry key="M10" value="2.1109187809846675E-24" />
+      <entry key="M15" value="2.8815389977764915E-16" />
+      <entry key="M30" value="4.0682726028820613E-8" />
+      <entry key="H1" value="4.910763194580345E-4" />
+      <entry key="H2" value="0.05419538154100788" />
+      <entry key="H4" value="0.570008516562843" />
+      <entry key="D1" value="4.052735783689003" />
+      <entry key="W1" value="5.6729292004395635" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9659848846610446" />
-      <entry key="MS500" value="1.138743739945458" />
-      <entry key="S2" value="1.9953005728571818" />
-      <entry key="S5" value="2.813238565218643" />
-      <entry key="S10" value="3.3040849434610045" />
-      <entry key="S30" value="3.740564939030596" />
-      <entry key="S60" value="4.095454920229334" />
-      <entry key="M2" value="9.09323880633587" />
-      <entry key="M5" value="55.8432471202554" />
-      <entry key="M10" value="143.30648569978078" />
-      <entry key="M15" value="206.7890313384618" />
-      <entry key="M30" value="307.3751498621171" />
-      <entry key="H1" value="381.1683905076623" />
-      <entry key="H2" value="493.0466222117193" />
-      <entry key="H4" value="866.6216583281418" />
-      <entry key="D1" value="2346.9449729082426" />
-      <entry key="W1" value="2903.4946609674685" />
+      <entry key="MS100" value="1.4832239054237255" />
+      <entry key="MS500" value="4.086552727393332" />
+      <entry key="S2" value="6.792171840292965" />
+      <entry key="S5" value="9.579207381830853" />
+      <entry key="S10" value="12.803929436548179" />
+      <entry key="S30" value="23.775591878819814" />
+      <entry key="S60" value="33.61229477298323" />
+      <entry key="M2" value="42.72186956295181" />
+      <entry key="M5" value="78.87501826215737" />
+      <entry key="M10" value="162.00554904061906" />
+      <entry key="M15" value="231.4600626879543" />
+      <entry key="M30" value="400.53887947945464" />
+      <entry key="H1" value="665.9342933829921" />
+      <entry key="H2" value="995.8351840567103" />
+      <entry key="H4" value="1487.4113522701384" />
+      <entry key="D1" value="3231.163500305111" />
+      <entry key="W1" value="3930.231449972259" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
@@ -245,7 +254,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Backend-Api-Setup",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/home/jeremy/School/Innovatief-Klimaat/Innovatief-Klimaat-Backend",
     "node.js.detected.package.eslint": "true",
@@ -256,6 +265,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -274,7 +288,7 @@
       <updated>1790681341352</updated>
       <workItem from="1790681343257" duration="4067000" />
       <workItem from="1790700433154" duration="11313000" />
-      <workItem from="1790749099101" duration="895000" />
+      <workItem from="1790749099101" duration="6274000" />
     </task>
     <task id="LOCAL-00001" summary="backend setup symfony">
       <option name="closed" value="true" />
